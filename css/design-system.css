@@ -1,0 +1,79 @@
+:root {
+  /* Colors - Brand & Accent */
+  --color-primary: #1c1c1e;
+  --color-on-primary: #ffffff;
+  --color-brand-yellow: #ffd02f;
+  --color-brand-yellow-deep: #fcb900;
+  --color-yellow-light: #fff4c4;
+  --color-yellow-dark: #746019;
+  --color-brand-blue: #4262ff;
+  --color-blue-450: #5b76fe;
+  --color-blue-pressed: #2a41b6;
+  --color-brand-coral: #ff9999;
+  --color-coral-light: #ffc6c6;
+  --color-coral-dark: #600000;
+  --color-brand-rose: #ffd8f4;
+  --color-rose-light: #fde0f0;
+  --color-brand-pink: #fde0f0;
+  --color-brand-teal: #0fbcb0;
+  --color-teal-light: #c3faf5;
+  --color-moss-dark: #187574;
+  --color-brand-orange-light: #ffe6cd;
+  
+  /* Colors - Semantic */
+  --color-brand-red: #fbd4d4;
+  --color-brand-red-dark: #e3c5c5;
+  --color-success-accent: #00b473;
+
+  /* Colors - Surface */
+  --color-canvas: #ffffff;
+  --color-surface: #f7f8fa;
+  --color-surface-soft: #fafbfc;
+  --color-surface-yellow: #fff8e0;
+  --color-surface-pricing-featured: #f5f3ff;
+  --color-hairline: #e0e2e8;
+  --color-hairline-soft: #eef0f3;
+  --color-hairline-strong: #c7cad5;
+  
+  /* Colors - Text */
+  --color-ink-deep: #050038;
+  --color-ink: #1c1c1e;
+  --color-charcoal: #2c2c34;
+  --color-slate: #555a6a;
+  --color-steel: #6b6f7e;
+  --color-stone: #8e91a0;
+  --color-muted: #a5a8b5;
+  --color-on-dark: #ffffff;
+  --color-on-dark-muted: #a5a8b5;
+  --color-footer-bg: #1c1c1e;
+
+  /* Typography */
+  /* Fallback for Roobert PRO */
+  --font-family-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Rounded */
+  --rounded-xs: 4px;
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 12px;
+  --rounded-xl: 16px;
+  --rounded-xxl: 20px;
+  --rounded-xxxl: 28px;
+  --rounded-feature: 32px;
+  --rounded-full: 9999px;
+
+  /* Spacing */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 40px;
+  --space-section-sm: 48px;
+  --space-section: 64px;
+  --space-section-lg: 96px;
+  --space-hero: 120px;
+}

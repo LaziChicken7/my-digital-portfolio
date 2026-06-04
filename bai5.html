@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | Bài 5</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-brand-container">
+                <div class="nav-brand-icon">M</div>
+                <div class="nav-brand">My Portfolio</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Giới thiệu</a>
+                <a href="projects.html" class="active">Dự án</a>
+                <a href="summary.html">Tổng kết</a>
+            </div>
+            <div>
+                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container text-center">
+                <div class="badge-tag-purple mb-md">Bài 5</div>
+                <h1 class="display-lg mb-sm">AI hỗ trợ<br>sáng tạo nội dung</h1>
+                <p class="subtitle mb-xl">Sản phẩm xuất bản Blog chuyên môn với sự hỗ trợ của Generative AI.</p>
+            </div>
+            
+            <div class="container" style="max-width: 900px;">
+                
+                <div class="card-feature mb-xl">
+                    <p class="body-md text-slate mb-xl">Trong dự án này, tôi đóng vai trò là một người sáng tạo nội dung để xuất bản bài viết Blog công nghệ chuyên sâu: <strong>"Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI"</strong>. Thay vì để AI tự động viết 100%, tôi đã định vị AI là một "Co-pilot" (Người lái phụ) và giữ vững >50% khối lượng công việc là chuyên môn của con người.</p>
+                    
+                    <h3 class="heading-3 mb-sm">1. Bộ 3 công cụ AI (The Co-pilot Stack)</h3>
+                    
+                    <div class="grid-3 mt-lg mb-xxl">
+                        <div class="card-base text-center">
+                            <div style="font-size: 40px; margin-bottom: var(--space-sm);">🤖</div>
+                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Google Gemini (Văn bản)</h4>
+                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Lên dàn ý (Outline) logic và viết bản nháp thô.</p>
+                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> AI gặp "ảo giác" khi code. Tôi đã tự viết lại 60% nội dung, bổ sung code thật về JDBC/JPA và CI/CD.</p>
+                        </div>
+                        
+                        <div class="card-base text-center">
+                            <div style="font-size: 40px; margin-bottom: var(--space-sm);">🎨</div>
+                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Midjourney (Hình ảnh)</h4>
+                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo ảnh Cover phong cách Cyberpunk.</p>
+                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> AI sinh ra text vô nghĩa trên màn hình. Tôi dùng Photoshop đè code thuật toán thật lên ảnh.</p>
+                        </div>
+
+                        <div class="card-base text-center">
+                            <div style="font-size: 40px; margin-bottom: var(--space-sm);">📊</div>
+                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Canva Magic Design</h4>
+                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo layout Infographic tự động.</p>
+                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> Tinh chỉnh thủ công bảng màu (Palette) sang xanh dương tối và sửa lại Typography cho chuẩn Tech.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="heading-3 mb-sm">2. Khía cạnh Đạo đức & Tư duy làm việc</h3>
+                    <div class="ethics-box">
+                        <p class="body-md text-slate mb-sm">Sự xuất hiện của AI đã thay đổi quy trình làm việc của tôi từ <em>Tuyến tính (Viết từ đầu)</em> sang <em>Song song (Định hướng AI ➔ Kiểm chứng ➔ Tinh chỉnh)</em>. Thời gian rút ngắn từ 3 ngày xuống 1 ngày, nhưng chất xám kiểm duyệt tăng lên. Tôi tuân thủ 3 nguyên tắc đạo đức:</p>
+                        <ul class="ethics-list">
+                            <li>⚖️ <strong>Bản quyền:</strong> Cẩn trọng với dữ liệu huấn luyện của Midjourney.</li>
+                            <li>🧠 <strong>Bảo vệ năng lực lõi:</strong> Không copy-paste code logic của AI để tránh thui chột tư duy thuật toán.</li>
+                            <li>📢 <strong>Minh bạch:</strong> Đặt công bố (Disclaimer) rõ ràng về việc bài viết có sử dụng AI hỗ trợ ở phần mở đầu.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="heading-3 mb-sm mt-xl">3. Trưng bày sản phẩm (Bản mô phỏng)</h3>
+                    <!-- Mô phỏng giao diện một bài Blog bằng CSS (Không dùng ảnh) -->
+                    <div class="blog-mockup">
+                        <div class="blog-cover-simulated">
+                            <div class="cyberpunk-text">CYBERPUNK // BACKEND ERA</div>
+                        </div>
+                        <div class="blog-content-simulated">
+                            <div class="blog-tags"><span>#Java</span> <span>#SpringBoot</span> <span>#AI</span></div>
+                            <h2 class="blog-title">Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI</h2>
+                            <div class="blog-meta">Tác giả: Vũ Đức Trung • Thời gian đọc: 8 phút</div>
+                            <div class="blog-disclaimer"><em>*Disclaimer: Bài viết này được phác thảo với sự hỗ trợ của Google Gemini. Phần logic code (JDBC/JPA, CI/CD) được tác giả trực tiếp kiểm chứng và viết lại.</em></div>
+                            <p class="blog-excerpt">Sự ra đời của các công cụ Generative AI đang tái định hình hoàn toàn cách chúng ta xây dựng hệ thống backend. Tuy nhiên, liệu AI có thể thực sự thay thế một kỹ sư nắm vững kiến trúc hệ thống? Hãy cùng phân tích...</p>
+                            <div class="btn-read-more">Đọc tiếp bài viết ➔</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-xl mb-xl">
+                    <a href="assets/files/Bai_5.pdf" target="_blank" class="button-primary">
+                        📄 Xem File báo cáo chi tiết Bài 5 (PDF)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-region mt-xxl">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
+                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                </div>
+                <div style="text-align:right;">
+                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

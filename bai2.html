@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | Bài 2</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-brand-container">
+                <div class="nav-brand-icon">M</div>
+                <div class="nav-brand">My Portfolio</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Giới thiệu</a>
+                <a href="projects.html" class="active">Dự án</a>
+                <a href="summary.html">Tổng kết</a>
+            </div>
+            <div>
+                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container text-center">
+                <div class="badge-tag-purple mb-md" style="background-color: var(--color-coral-light); color: var(--color-coral-dark);">Bài 2</div>
+                <h1 class="display-lg mb-sm">Tìm kiếm và đánh giá<br>thông tin học thuật</h1>
+                <p class="subtitle mb-xl">Kết quả tìm kiếm học thuật bằng các toán tử nâng cao và bảng đánh giá nguồn tin.</p>
+            </div>
+            
+            <div class="container" style="max-width: 900px;">
+                
+                <div class="card-feature mb-xl">
+                    <h3 class="heading-3 mb-sm">1. Chủ đề và Phạm vi tìm kiếm</h3>
+                    <p class="body-md text-slate mb-sm">
+                        <strong>Chủ đề:</strong> Tác động của Generative AI (ví dụ: ChatGPT) đến tính liêm chính học thuật trong giáo dục đại học.
+                    </p>
+                    <p class="body-md text-slate">
+                        Đây là một chủ đề mang tính thách thức cao, tài liệu liên tục được cập nhật, đòi hỏi phải khai thác từ các cơ sở dữ liệu học thuật uy tín như: <em>Google Scholar, ScienceDirect, IEEE Xplore</em>.
+                    </p>
+                </div>
+
+                <div class="card-feature card-feature-teal mb-xl">
+                    <h3 class="heading-3 mb-sm">2. Ứng dụng Toán tử nâng cao (Advanced Search)</h3>
+                    <p class="body-md mb-md">
+                        Để thu hẹp phạm vi và tìm được 11 tài liệu chất lượng nhất, tôi đã kết hợp các toán tử tìm kiếm (Boolean operators) như sau:
+                    </p>
+                    <ul class="code-list">
+                        <li>Sử dụng ngoặc kép và toán tử AND: <code>"Generative AI" AND "academic integrity"</code></li>
+                        <li>Mở rộng kết quả bằng toán tử OR: <code>(ChatGPT OR "Large Language Models") AND "higher education"</code></li>
+                        <li>Tìm kiếm chính sách từ các trường đại học: <code>site:.edu "AI policy" filetype:pdf</code></li>
+                    </ul>
+                </div>
+
+                <div class="card-base mb-xl">
+                    <h3 class="heading-3 mb-md">3. Đánh giá và xếp hạng nguồn tin</h3>
+                    <p class="body-md text-slate mb-md">Dưới đây là trích đoạn bảng tổng hợp và đánh giá độ tin cậy của tài liệu dựa trên các tiêu chí: <em>Tác giả, Nhà xuất bản, Phương pháp nghiên cứu, và Tính cập nhật</em>.</p>
+                    
+                    <div class="table-responsive">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Tên tài liệu (Tác giả, Năm)</th>
+                                    <th>Nguồn / NXB</th>
+                                    <th>Đánh giá độ tin cậy chi tiết</th>
+                                    <th>Độ tin cậy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Artificial intelligence in education... (Cotton et al., 2023)</td>
+                                    <td>Taylor & Francis (Q1)</td>
+                                    <td><strong>Tác giả:</strong> GS từ ĐH Plymouth.<br><strong>PP Nghiên cứu:</strong> Tổng quan hệ thống (Systematic review). Trích dẫn >500 lần.</td>
+                                    <td><span class="badge-success">Rất cao (5/5)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Navigating the generative AI era... (Perkins, 2023)</td>
+                                    <td>Journal of University Teaching (Q2)</td>
+                                    <td><strong>PP Nghiên cứu:</strong> Nghiên cứu định tính, đề xuất khung ứng dụng.<br><strong>Đánh giá:</strong> Đáng tin cậy nhưng mang tính lý thuyết nhiều hơn.</td>
+                                    <td><span class="badge-med">Cao (4/5)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Guidance for generative AI in education... (UNESCO, 2023)</td>
+                                    <td>Nguồn mở Internet</td>
+                                    <td><strong>Tác giả:</strong> Tổ chức Giáo dục LHQ.<br><strong>Đánh giá:</strong> Kim chỉ nam chính sách uy tín toàn cầu, do ban soạn thảo chuyên gia viết.</td>
+                                    <td><span class="badge-med">Cao (4/5)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="body-md mt-md">Toàn bộ quá trình phân tích ưu/nhược điểm chuyên sâu và Danh mục tài liệu tham khảo (chuẩn Harvard) được trình bày trong báo cáo đính kèm:</p>
+                    
+                    <a href="assets/files/Bai_2.pdf" target="_blank" class="button-primary mt-md">
+                        📄 Xem File báo cáo chi tiết Bài 2 (PDF)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-region mt-xxl">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
+                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                </div>
+                <div style="text-align:right;">
+                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

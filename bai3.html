@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | Bài 3</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-brand-container">
+                <div class="nav-brand-icon">M</div>
+                <div class="nav-brand">My Portfolio</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Giới thiệu</a>
+                <a href="projects.html" class="active">Dự án</a>
+                <a href="summary.html">Tổng kết</a>
+            </div>
+            <div>
+                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container text-center">
+                <div class="badge-tag-purple mb-md" style="background-color: var(--color-surface-yellow); color: var(--color-yellow-dark);">Bài 3</div>
+                <h1 class="display-lg mb-sm">Viết Prompt hiệu quả<br>cho các tác vụ học tập</h1>
+                <p class="subtitle mb-xl">So sánh giữa Prompt ban đầu và Prompt cải tiến cùng kết quả đầu ra từ AI.</p>
+            </div>
+            
+            <div class="container" style="max-width: 1000px;">
+                
+                <div class="card-feature mb-xl">
+                    <p class="body-md text-slate mb-lg">Trong bài tập này, tôi đã thử nghiệm kỹ thuật Prompt Engineering (Tinh chỉnh câu lệnh) trên AI với nhiều chủ đề phức tạp như: Triết học, Vật lý (Gia tốc Coriolis) và Lập trình (OOP). Dưới đây là minh chứng về sự thay đổi khác biệt của AI khi nâng cấp câu lệnh từ Cơ bản lên Nâng cao (sử dụng kỹ thuật <strong>Role Prompting</strong> và <strong>Step-by-step</strong>):</p>
+                    
+                    <div class="prompt-comparison">
+                        <!-- Cột Prompt Ban Đầu -->
+                        <div class="prompt-column">
+                            <div class="mb-sm">
+                                <span class="badge-med" style="background-color: var(--color-surface); color: var(--color-charcoal); border: 1px solid var(--color-hairline-strong);">❌ Prompt Cơ bản</span>
+                            </div>
+                            <div class="prompt-box">
+                                <strong>Lệnh:</strong> "Tóm tắt đoạn văn này về Triết học: Thế giới quan là toàn bộ những quan niệm của con người về thế giới, về bản thân con người..."
+                            </div>
+                            <div class="output-box">
+                                <strong>Vấn đề gặp phải:</strong>
+                                <p class="text-slate mt-xs">AI trả về kết quả giống hệt bách khoa toàn thư – dài dòng, khô khan. Hạn chế sự sáng tạo và đôi khi AI tự "bịa" thêm những kiến thức không cần thiết, rất khó để sinh viên tiếp thu.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cột Prompt Cải Tiến -->
+                        <div class="prompt-column">
+                            <div class="mb-sm">
+                                <span class="badge-success">✅ Prompt Nâng cao</span>
+                            </div>
+                            <div class="prompt-box" style="border-color: var(--color-brand-blue); background-color: var(--color-surface-pricing-featured);">
+                                <strong>Lệnh:</strong> "Hãy đóng vai một <em>giảng viên Triết học nhiệt huyết</em>. Tôi là sinh viên năm nhất... Hãy giúp tôi tóm tắt theo các bước sau:<br><br>
+                                <strong>Bước 1:</strong> Liệt kê 2 khái niệm cốt lõi.<br>
+                                <strong>Bước 2:</strong> Tóm tắt bằng ngôn ngữ đời thường.<br>
+                                <strong>Bước 3:</strong> Cho một ví dụ thực tế về đời sống sinh viên."
+                            </div>
+                            <div class="output-box" style="border-color: var(--color-brand-blue);">
+                                <strong>Hiệu quả mang lại:</strong>
+                                <p class="text-slate mt-xs">Việc gắn <strong>"Giọng điệu"</strong> giúp AI chọn lọc từ vựng gần gũi. Tư duy <strong>logic từng bước</strong> ép AI giải thích có chiều sâu nguyên nhân - kết quả. Việc đưa ra ví dụ cụ thể giúp kiến thức phức tạp trở nên cực kỳ dễ hiểu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-feature card-feature-yellow mb-xl">
+                    <h3 class="heading-3 mb-sm">💡 5 Nguyên tắc "Vàng" khi giao tiếp với AI</h3>
+                    <p class="body-md mb-md">Từ những phân tích trên, tôi đã đúc kết được công thức để tối ưu hóa mọi truy vấn AI:</p>
+                    
+                    <div class="rules-grid">
+                        <div class="rule-card">
+                            <div class="rule-icon">🎭</div>
+                            <h4>1. Cấp vai trò</h4>
+                            <p>Luôn cho AI biết nó đang là ai (Chuyên gia, Gia sư...).</p>
+                        </div>
+                        <div class="rule-card">
+                            <div class="rule-icon">🌍</div>
+                            <h4>2. Nêu bối cảnh</h4>
+                            <p>Cung cấp mục đích sử dụng thông tin.</p>
+                        </div>
+                        <div class="rule-card">
+                            <div class="rule-icon">📝</div>
+                            <h4>3. Định dạng rõ</h4>
+                            <p>Yêu cầu cấu trúc đầu ra cụ thể.</p>
+                        </div>
+                        <div class="rule-card">
+                            <div class="rule-icon">✂️</div>
+                            <h4>4. Chia nhỏ</h4>
+                            <p>Không giao việc quá lớn. Hãy yêu cầu AI thực hiện từng Bước.</p>
+                        </div>
+                        <div class="rule-card">
+                            <div class="rule-icon">🎯</div>
+                            <h4>5. Cho ví dụ</h4>
+                            <p>Đưa ra mẫu chuẩn (Few-shot) để AI bắt chước.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-xl mb-xl">
+                    <a href="assets/files/Bai_3.pdf" target="_blank" class="button-primary">
+                        📄 Xem File báo cáo chi tiết 13 trang Bài 3 (PDF)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-region mt-xxl">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
+                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                </div>
+                <div style="text-align:right;">
+                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
