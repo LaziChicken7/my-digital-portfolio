@@ -3,67 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Portfolio | Tổng kết</title>
+    <title>Tổng kết | Mastercard Design System</title>
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-brand-container">
-                <div class="nav-brand-icon">M</div>
-                <div class="nav-brand">My Portfolio</div>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Giới thiệu</a>
-                <a href="projects.html">Dự án</a>
-                <a href="summary.html" class="active">Tổng kết</a>
-            </div>
-            <div>
-                <a href="index.html" class="button-secondary">Về trang chủ</a>
-            </div>
+    <!-- Floating Navigation Pill -->
+        <nav class="floating-nav">
+        <div class="nav-brand">
+            <img src="assets/images/school-logo.png" alt="Logo Trường" class="school-logo">
+            <span>Vu Duc Trung's Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="text">Giới thiệu</span>
+            </a>
+            <a href="projects.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </span>
+                <span class="text">Dự án</span>
+            </a>
+            <a href="summary.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+                </span>
+                <span class="text">Tổng kết</span>
+            </a>
+            <img src="assets/images/avatar.png" alt="Profile Icon" class="nav-profile-icon">
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main>
-        <section class="section">
-            <div class="container text-center">
-                <h1 class="display-lg mb-sm">Tổng Kết Dự Án</h1>
-                <p class="subtitle mb-xl">Nhìn lại hành trình và những kỹ năng cốt lõi đã đạt được.</p>
-            </div>
-            
+        <section class="section-large" style="margin-top: 80px;">
             <div class="container" style="max-width: 800px;">
-                <div class="card-feature card-feature-yellow mb-xl">
-                    <h2 class="heading-2 mb-md">Cảm nhận cá nhân</h2>
-                    <p class="body-md mb-md">Quá trình thực hiện dự án Portfolio này mang lại cho tôi cơ hội tuyệt vời để tổng hợp toàn bộ các kỹ năng đã học. Việc xây dựng một sản phẩm hoàn chỉnh không chỉ giúp củng cố kiến thức mà còn rèn luyện tư duy hệ thống và khả năng tự học.</p>
+                <div class="eyebrow" style="justify-content: center; margin-bottom: 24px;">• NHÌN LẠI HÀNH TRÌNH</div>
+                <h1 class="h1-hero text-center" style="margin-bottom: 64px; text-align: center;">Tổng Kết Dự Án</h1>
+
+                <div class="mc-card" style="margin-bottom: 48px;">
+                    <div class="eyebrow">• CẢM NHẬN</div>
+                    <h2 class="h3-card" style="margin-bottom: 16px;">Cảm nhận cá nhân</h2>
+                    <p style="color: var(--color-charcoal);">Quá trình thực hiện dự án Portfolio này mang lại cho tôi cơ hội tuyệt vời để tổng hợp toàn bộ các kỹ năng đã học. Việc xây dựng một sản phẩm hoàn chỉnh không chỉ giúp củng cố kiến thức mà còn rèn luyện tư duy hệ thống và khả năng tự học.</p>
                 </div>
 
-                <div class="card-base mb-xl">
-                    <h2 class="heading-2 mb-md">Kiến thức quan trọng nhất</h2>
-                    <div style="margin-left: var(--space-md);">
-                        <p class="body-md mb-sm"><strong>1. Kỹ năng số cơ bản:</strong> Cách tổ chức thư mục, tìm kiếm tài liệu thông minh.</p>
-                        <p class="body-md mb-sm"><strong>2. Làm chủ AI:</strong> Sử dụng Prompt Engineering hiệu quả và sáng tạo với AI.</p>
-                        <p class="body-md mb-md"><strong>3. Đạo đức & Trách nhiệm:</strong> Hiểu rõ ranh giới và cách sử dụng công cụ AI một cách liêm chính học thuật.</p>
-                    </div>
+                <div class="mc-card" style="margin-bottom: 48px;">
+                    <div class="eyebrow">• KIẾN THỨC</div>
+                    <h2 class="h3-card" style="margin-bottom: 24px;">Kiến thức quan trọng nhất</h2>
+                    <ul class="project-list">
+                        <li>
+                            <strong style="color: var(--color-ink-black);">Kỹ năng số cơ bản:</strong>
+                            <p style="color: var(--color-charcoal); margin-top: 4px;">Cách tổ chức thư mục, tìm kiếm tài liệu thông minh.</p>
+                        </li>
+                        <li>
+                            <strong style="color: var(--color-ink-black);">Làm chủ AI:</strong>
+                            <p style="color: var(--color-charcoal); margin-top: 4px;">Sử dụng Prompt Engineering hiệu quả và sáng tạo với AI.</p>
+                        </li>
+                        <li>
+                            <strong style="color: var(--color-ink-black);">Đạo đức & Trách nhiệm:</strong>
+                            <p style="color: var(--color-charcoal); margin-top: 4px;">Hiểu rõ ranh giới và cách sử dụng công cụ AI một cách liêm chính học thuật.</p>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="card-feature card-feature-rose">
-                    <h2 class="heading-2 mb-md">Thách thức lớn nhất</h2>
-                    <p class="body-md">Thách thức lớn nhất là việc duy trì tính nhất quán về giao diện và tổ chức các file HTML/CSS sao cho code gọn gàng, dễ bảo trì theo thời gian. Tuy nhiên, qua quá trình làm việc, tôi đã cảm thấy tự tin hơn rất nhiều khi làm việc với thiết kế web.</p>
+                <div class="mc-card">
+                    <div class="eyebrow">• THÁCH THỨC</div>
+                    <h2 class="h3-card" style="margin-bottom: 16px;">Thách thức lớn nhất</h2>
+                    <p style="color: var(--color-charcoal);">Thách thức lớn nhất là việc duy trì tính nhất quán về giao diện và tổ chức các file HTML/CSS sao cho code gọn gàng, dễ bảo trì theo thời gian. Tuy nhiên, qua quá trình làm việc, tôi đã cảm thấy tự tin hơn rất nhiều khi làm việc với thiết kế web.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer-region mt-xxl">
+    <!-- Footer -->
+    <footer class="mc-footer" style="background-color: #0f172a; color: #f8fafc; padding: 80px 0 60px; margin-top: 60px;">
         <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
-                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+            <h2 style="color: #f8fafc; margin-bottom: 64px;">Chúng tôi luôn ở đây khi bạn cần.</h2>
+            <div class="mc-footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px;">
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• VỀ TÔI</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><a href="index.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Giới thiệu chung</a></li>
+                        <li style="margin-bottom: 16px;"><a href="projects.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Dự án</a></li>
+                        <li style="margin-bottom: 16px;"><a href="summary.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Tổng kết</a></li>
+                    </ul>
                 </div>
-                <div style="text-align:right;">
-                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• KẾT NỐI</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><a href="https://github.com/LaziChicken7" target="_blank" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">GitHub ↗</a></li>
+                        <li style="margin-bottom: 16px;"><a href="mailto:25022036@vnu.edu.vn" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Email ↗</a></li>
+                        <li style="margin-bottom: 16px;"><a href="https://www.facebook.com/LaziChicken7" target="_blank" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Facebook ↗</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- Empty col for spacing -->
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• BẢN QUYỀN</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><span style="color: #cbd5e1;">© 2026 Vũ Đức Trung.</span></li>
+                        <li style="margin-bottom: 16px;"><span style="color: #cbd5e1;">All rights reserved.</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -72,3 +116,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+

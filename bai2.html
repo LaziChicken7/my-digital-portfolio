@@ -8,45 +8,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-brand-container">
-                <div class="nav-brand-icon">M</div>
-                <div class="nav-brand">My Portfolio</div>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Giới thiệu</a>
-                <a href="projects.html" class="active">Dự án</a>
-                <a href="summary.html">Tổng kết</a>
-            </div>
-            <div>
-                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
-            </div>
+    <nav class="floating-nav">
+        <div class="nav-brand">
+            <img src="assets/images/school-logo.png" alt="Logo Trường" class="school-logo">
+            <a href="projects.html" class="glass-nav-item" style="margin-left: 4px;">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                </span>
+                <span class="text">Quay lại</span>
+            </a>
+            <span style="margin-left: 8px;">Vu Duc Trung's Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="text">Giới thiệu</span>
+            </a>
+            <a href="projects.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </span>
+                <span class="text">Dự án</span>
+            </a>
+            <a href="summary.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+                </span>
+                <span class="text">Tổng kết</span>
+            </a>
+            <img src="assets/images/avatar.png" alt="Profile Icon" class="nav-profile-icon">
         </div>
     </nav>
 
     <main>
-        <section class="section">
+        <section class="section" style="padding-top: 160px;">
             <div class="container text-center">
-                <div class="badge-tag-purple mb-md" style="background-color: var(--color-coral-light); color: var(--color-coral-dark);">Bài 2</div>
-                <h1 class="display-lg mb-sm">Tìm kiếm và đánh giá<br>thông tin học thuật</h1>
+                <div class="eyebrow mb-md" style="background-color: var(--color-coral-light); color: var(--color-coral-dark);">Bài 2</div>
+                <h1 class="h1-hero mb-sm">Tìm kiếm và đánh giá<br>thông tin học thuật</h1>
                 <p class="subtitle mb-xl">Kết quả tìm kiếm học thuật bằng các toán tử nâng cao và bảng đánh giá nguồn tin.</p>
             </div>
             
-            <div class="container" style="max-width: 900px;">
+            <div class="container">
                 
-                <div class="card-feature mb-xl">
-                    <h3 class="heading-3 mb-sm">1. Chủ đề và Phạm vi tìm kiếm</h3>
-                    <p class="body-md text-slate mb-sm">
+                <div class="mc-card mb-xl">
+                    <h3 class="h3-card mb-sm">1. Chủ đề và Phạm vi tìm kiếm</h3>
+                    <p class="body-md  mb-sm">
                         <strong>Chủ đề:</strong> Tác động của Generative AI (ví dụ: ChatGPT) đến tính liêm chính học thuật trong giáo dục đại học.
                     </p>
-                    <p class="body-md text-slate">
+                    <p class="body-md ">
                         Đây là một chủ đề mang tính thách thức cao, tài liệu liên tục được cập nhật, đòi hỏi phải khai thác từ các cơ sở dữ liệu học thuật uy tín như: <em>Google Scholar, ScienceDirect, IEEE Xplore</em>.
                     </p>
                 </div>
 
-                <div class="card-feature card-feature-teal mb-xl">
-                    <h3 class="heading-3 mb-sm">2. Ứng dụng Toán tử nâng cao (Advanced Search)</h3>
+                <div class="mc-card mb-xl">
+                    <h3 class="h3-card mb-sm">2. Ứng dụng Toán tử nâng cao (Advanced Search)</h3>
                     <p class="body-md mb-md">
                         Để thu hẹp phạm vi và tìm được 11 tài liệu chất lượng nhất, tôi đã kết hợp các toán tử tìm kiếm (Boolean operators) như sau:
                     </p>
@@ -57,9 +74,9 @@
                     </ul>
                 </div>
 
-                <div class="card-base mb-xl">
-                    <h3 class="heading-3 mb-md">3. Đánh giá và xếp hạng nguồn tin</h3>
-                    <p class="body-md text-slate mb-md">Dưới đây là trích đoạn bảng tổng hợp và đánh giá độ tin cậy của tài liệu dựa trên các tiêu chí: <em>Tác giả, Nhà xuất bản, Phương pháp nghiên cứu, và Tính cập nhật</em>.</p>
+                <div class="mc-card mb-xl">
+                    <h3 class="h3-card mb-md">3. Đánh giá và xếp hạng nguồn tin</h3>
+                    <p class="body-md  mb-md">Dưới đây là trích đoạn bảng tổng hợp và đánh giá độ tin cậy của tài liệu dựa trên các tiêu chí: <em>Tác giả, Nhà xuất bản, Phương pháp nghiên cứu, và Tính cập nhật</em>.</p>
                     
                     <div class="table-responsive">
                         <table class="comparison-table">
@@ -96,7 +113,10 @@
 
                     <p class="body-md mt-md">Toàn bộ quá trình phân tích ưu/nhược điểm chuyên sâu và Danh mục tài liệu tham khảo (chuẩn Harvard) được trình bày trong báo cáo đính kèm:</p>
                     
-                    <a href="assets/files/Bai_2.pdf" target="_blank" class="button-primary mt-md">
+                </div>
+
+                <div class="text-center mt-xl mb-xl">
+                    <a href="assets/files/Bai_2.pdf" target="_blank" class="mc-pill-ink">
                         📄 Xem File báo cáo chi tiết Bài 2 (PDF)
                     </a>
                 </div>
@@ -105,15 +125,15 @@
         </section>
     </main>
 
-    <footer class="footer-region mt-xxl">
+    <footer class="footer-region mt-xxl" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 32px; padding-bottom: 32px; background: rgba(0,0,0,0.2);">
         <div class="container">
-            <div class="grid-2">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
                 <div>
-                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
-                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                    <h4 class="eyebrow mb-sm" style="color: #f8fafc; font-weight: 600; display: flex; align-items: center; gap: 8px;"><span style="color: #f97316; font-size: 10px;">●</span> MY PORTFOLIO</h4>
+                    <p class="caption" style="color: #94a3b8;">Xây dựng với giao diện Miro Visual Workspace.</p>
                 </div>
                 <div style="text-align:right;">
-                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                    <p class="caption" style="color: #e2e8f0; font-weight: 500;">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -122,3 +142,7 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+

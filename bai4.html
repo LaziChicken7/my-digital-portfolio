@@ -8,98 +8,133 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-brand-container">
-                <div class="nav-brand-icon">M</div>
-                <div class="nav-brand">My Portfolio</div>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Giới thiệu</a>
-                <a href="projects.html" class="active">Dự án</a>
-                <a href="summary.html">Tổng kết</a>
-            </div>
-            <div>
-                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
-            </div>
+        <nav class="floating-nav">
+        <div class="nav-brand">
+            <img src="assets/images/school-logo.png" alt="Logo Trường" class="school-logo">
+            <a href="projects.html" class="glass-nav-item" style="margin-left: 4px;">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                </span>
+                <span class="text">Quay lại</span>
+            </a>
+            <span style="margin-left: 8px;">Vu Duc Trung's Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="text">Giới thiệu</span>
+            </a>
+            <a href="projects.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </span>
+                <span class="text">Dự án</span>
+            </a>
+            <a href="summary.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+                </span>
+                <span class="text">Tổng kết</span>
+            </a>
+            <img src="assets/images/avatar.png" alt="Profile Icon" class="nav-profile-icon">
         </div>
     </nav>
 
     <main>
-        <section class="section">
+        <section class="section" style="padding-top: 160px;">
             <div class="container text-center">
-                <div class="badge-tag-purple mb-md" style="background-color: var(--color-coral-light); color: var(--color-coral-dark);">Bài 4</div>
-                <h1 class="display-lg mb-sm">Công cụ hợp tác trực tuyến<br>cho dự án nhóm</h1>
+                <div class="eyebrow mb-md" style="background-color: var(--color-coral-light); color: var(--color-coral-dark);">Bài 4</div>
+                <h1 class="h1-hero mb-sm">Công cụ hợp tác trực tuyến<br>cho dự án nhóm</h1>
                 <p class="subtitle mb-xl">Thiết lập hệ sinh thái công cụ làm việc và giải quyết xung đột.</p>
             </div>
             
-            <div class="container" style="max-width: 900px;">
+            <div class="container">
                 
-                <div class="card-feature mb-xl">
-                    <p class="body-md text-slate mb-lg">Trong dự án <strong>"AI trong Khoa học Tự nhiên & Kỹ thuật - Công nghệ"</strong>, với vai trò thành viên phụ trách nội dung, tôi đã tham gia thiết lập và điều phối công việc nhóm thông qua 4 nhóm công cụ trực tuyến. Dưới đây là cách tôi tổ chức không gian làm việc số và kinh nghiệm xử lý xung đột:</p>
+                <div class="mc-card mb-xl">
+                    <p class="body-md">Trong dự án <strong>"AI trong Khoa học Tự nhiên & Kỹ thuật - Công nghệ"</strong>, với vai trò thành viên phụ trách nội dung, tôi đã tham gia thiết lập và điều phối công việc nhóm thông qua 4 nhóm công cụ trực tuyến. Dưới đây là cách tôi tổ chức không gian làm việc số và kinh nghiệm xử lý xung đột:</p>
+                </div>
+
+                <div class="mc-card mb-xl">
+                    <h3 class="h3-card mb-sm">1. Hệ sinh thái công cụ hợp tác (Workflow)</h3>
                     
-                    <h3 class="heading-3 mb-sm">1. Hệ sinh thái công cụ hợp tác (Workflow)</h3>
-                    
-                    <div class="tools-grid">
-                        <div class="tool-card trello">
-                            <div class="tool-header">📊 Quản lý tác vụ (Trello)</div>
-                            <ul>
-                                <li><strong>Phân loại:</strong> Dùng Nhãn màu (Đỏ/Vàng/Xanh) để báo mức độ ưu tiên.</li>
-                                <li><strong>Chi tiết:</strong> 100% thẻ task đều có Description, Checklist và Deadline.</li>
-                                <li><strong>Tương tác:</strong> Cập nhật tiến độ (To-do > Doing > Done) liên tục > 4 lần/tuần.</li>
-                            </ul>
+                    <div class="rules-grid" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="rule-card">
+                            <div class="rule-icon">📊</div>
+                            <h4>1. Quản lý tác vụ (Trello)</h4>
+                            <p class="mt-xs">
+                                <strong>Phân loại:</strong> Dùng Nhãn màu (Đỏ/Vàng/Xanh) để báo mức độ ưu tiên.<br>
+                                <strong>Chi tiết:</strong> 100% thẻ task đều có Description, Checklist và Deadline.<br>
+                                <strong>Tương tác:</strong> Cập nhật tiến độ (To-do > Doing > Done) liên tục > 4 lần/tuần.
+                            </p>
                         </div>
                         
-                        <div class="tool-card drive">
-                            <div class="tool-header">📁 Quản lý tài nguyên (Drive)</div>
-                            <ul>
-                                <li><strong>Cấu trúc:</strong> Chia folder theo cấp bậc: <em>Tài liệu / Bản nháp / Sản phẩm</em>.</li>
-                                <li><strong>Quy tắc tên:</strong> <code>[Ngày]_[Tên]_[Người]_v1</code>.</li>
-                                <li><strong>Phân quyền:</strong> "Viewer" cho tài liệu, "Editor" cho bản nháp.</li>
-                            </ul>
+                        <div class="rule-card">
+                            <div class="rule-icon">📁</div>
+                            <h4>2. Quản lý tài nguyên (Drive)</h4>
+                            <p class="mt-xs">
+                                <strong>Cấu trúc:</strong> Chia folder theo cấp bậc: <em>Tài liệu / Bản nháp / Sản phẩm</em>.<br>
+                                <strong>Quy tắc tên:</strong> <code>[Ngày]_[Tên]_[Người]_v1</code>.<br>
+                                <strong>Phân quyền:</strong> "Viewer" cho tài liệu, "Editor" cho bản nháp.
+                            </p>
                         </div>
 
-                        <div class="tool-card docs">
-                            <div class="tool-header">📝 Soạn thảo chung (Docs)</div>
-                            <ul>
-                                <li><strong>Phân luồng:</strong> Chia mỗi người viết ở một trang/mục riêng, ghi rõ tên.</li>
-                                <li><strong>Chống trôi bài:</strong> Sử dụng chế độ "Suggesting" thay vì sửa trực tiếp.</li>
-                            </ul>
+                        <div class="rule-card">
+                            <div class="rule-icon">📝</div>
+                            <h4>3. Soạn thảo chung (Docs)</h4>
+                            <p class="mt-xs">
+                                <strong>Phân luồng:</strong> Chia mỗi người viết ở một trang/mục riêng, ghi rõ tên.<br>
+                                <strong>Chống trôi bài:</strong> Sử dụng chế độ "Suggesting" thay vì sửa trực tiếp.
+                            </p>
                         </div>
 
-                        <div class="tool-card chat">
-                            <div class="tool-header">💬 Giao tiếp nhóm (Zalo)</div>
-                            <ul>
-                                <li><strong>Tần suất:</strong> Tương tác, hỗ trợ đồng đội tích cực với hơn 15 lượt/tuần.</li>
-                                <li><strong>Lưu trữ:</strong> Ghim các link/quyết định quan trọng và đồng bộ lên Trello.</li>
-                            </ul>
+                        <div class="rule-card">
+                            <div class="rule-icon">💬</div>
+                            <h4>4. Giao tiếp nhóm (Zalo)</h4>
+                            <p class="mt-xs">
+                                <strong>Tần suất:</strong> Tương tác, hỗ trợ đồng đội tích cực với hơn 15 lượt/tuần.<br>
+                                <strong>Lưu trữ:</strong> Ghim các link/quyết định quan trọng và đồng bộ lên Trello.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-feature card-feature-yellow mb-xl">
-                    <h3 class="heading-3 mb-sm">2. Khắc phục sự cố trong quá trình làm việc</h3>
+                <div class="mc-card mb-xl">
+                    <h3 class="h3-card mb-sm">2. Khắc phục sự cố trong quá trình làm việc</h3>
                     <p class="body-md mb-md">Làm việc nhóm trực tuyến không tránh khỏi các rào cản. Dưới đây là 3 tình huống tôi đã chủ động xử lý để đảm bảo tiến độ:</p>
                     
-                    <div class="problem-solving">
-                        <div class="solve-box">
-                            <strong>⚠️ Xung đột chỉnh sửa trên Docs:</strong> Khi nhiều người cùng gõ dễ xóa nhầm bài nhau. <br>
-                            <span class="solution">👉 <strong>Giải pháp:</strong> Yêu cầu nhóm chuyển sang chế độ "Suggesting" và chia không gian viết rõ ràng bằng Heading.</span>
+                    <div class="rules-grid" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="rule-card">
+                            <div class="rule-icon">⚠️</div>
+                            <h4>1. Xung đột chỉnh sửa trên Docs</h4>
+                            <p class="mt-xs">
+                                <strong>Vấn đề:</strong> Khi nhiều người cùng gõ dễ xóa nhầm bài nhau.<br>
+                                <span style="color: var(--color-brand-blue);">👉</span> <strong>Giải pháp:</strong> Yêu cầu nhóm chuyển sang chế độ "Suggesting" và chia không gian viết rõ ràng bằng Heading.
+                            </p>
                         </div>
-                        <div class="solve-box">
-                            <strong>⚠️ Trôi tin nhắn quan trọng:</strong> Link tài liệu bị trôi do chat quá nhiều. <br>
-                            <span class="solution">👉 <strong>Giải pháp:</strong> Dùng "Pin message" và thiết lập thói quen dán ngay link mới vào mô tả (Description) của Trello.</span>
+                        <div class="rule-card">
+                            <div class="rule-icon">⚠️</div>
+                            <h4>2. Trôi tin nhắn quan trọng</h4>
+                            <p class="mt-xs">
+                                <strong>Vấn đề:</strong> Link tài liệu bị trôi do chat quá nhiều.<br>
+                                <span style="color: var(--color-brand-blue);">👉</span> <strong>Giải pháp:</strong> Dùng "Pin message" và thiết lập thói quen dán ngay link mới vào mô tả (Description) của Trello.
+                            </p>
                         </div>
-                        <div class="solve-box">
-                            <strong>⚠️ Quên cập nhật tiến độ (Deadline):</strong> Làm xong nhưng quên kéo thẻ trên Trello. <br>
-                            <span class="solution">👉 <strong>Giải pháp:</strong> Thiết lập Rule tự động hóa trên Trello và chủ động nhắc nhở trên group chat vào cuối mỗi ngày.</span>
+                        <div class="rule-card">
+                            <div class="rule-icon">⚠️</div>
+                            <h4>3. Quên cập nhật tiến độ (Deadline)</h4>
+                            <p class="mt-xs">
+                                <strong>Vấn đề:</strong> Làm xong nhưng quên kéo thẻ trên Trello.<br>
+                                <span style="color: var(--color-brand-blue);">👉</span> <strong>Giải pháp:</strong> Thiết lập Rule tự động hóa trên Trello và chủ động nhắc nhở trên group chat vào cuối mỗi ngày.
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center mt-xl mb-xl">
-                    <a href="assets/files/Bai_4.pdf" target="_blank" class="button-primary" style="background-color: var(--color-ink); color: var(--color-on-primary) !important;">
-                        📄 Xem File báo cáo minh chứng 7 trang (PDF)
+                    <a href="assets/files/Bai_4.pdf" target="_blank" class="mc-pill-ink">
+                        📄 Xem File báo cáo chi tiết Bài 4 (PDF)
                     </a>
                 </div>
 
@@ -107,15 +142,15 @@
         </section>
     </main>
 
-    <footer class="footer-region mt-xxl">
+    <footer class="footer-region mt-xxl" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 32px; padding-bottom: 32px; background: rgba(0,0,0,0.2);">
         <div class="container">
-            <div class="grid-2">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
                 <div>
-                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
-                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                    <h4 class="eyebrow mb-sm" style="color: #f8fafc; font-weight: 600; display: flex; align-items: center; gap: 8px;"><span style="color: #f97316; font-size: 10px;">●</span> MY PORTFOLIO</h4>
+                    <p class="caption" style="color: #94a3b8;">Xây dựng với giao diện Miro Visual Workspace.</p>
                 </div>
                 <div style="text-align:right;">
-                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                    <p class="caption" style="color: #e2e8f0; font-weight: 500;">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -124,3 +159,7 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+

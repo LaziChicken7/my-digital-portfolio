@@ -3,93 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Portfolio | Giới thiệu</title>
+    <title>Vu Duc Trung | Mastercard Design System</title>
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-brand-container">
-                <div class="nav-brand-icon">M</div>
-                <div class="nav-brand">My Portfolio</div>
-            </div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Giới thiệu</a>
-                <a href="projects.html">Dự án</a>
-                <a href="summary.html">Tổng kết</a>
-            </div>
-            <div>
-                <a href="projects.html" class="button-primary">Bắt đầu khám phá</a>
-            </div>
+    <!-- Floating Navigation Pill -->
+        <nav class="floating-nav">
+        <div class="nav-brand">
+            <img src="assets/images/school-logo.png" alt="Logo Trường" class="school-logo">
+            <span>Vu Duc Trung's Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="text">Giới thiệu</span>
+            </a>
+            <a href="projects.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </span>
+                <span class="text">Dự án</span>
+            </a>
+            <a href="summary.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+                </span>
+                <span class="text">Tổng kết</span>
+            </a>
+            <img src="assets/images/avatar.png" alt="Profile Icon" class="nav-profile-icon">
         </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-band">
-            <div class="container">
-                <h1 class="hero-display mb-md">Nơi hội tụ tri thức<br>và công nghệ số</h1>
-                <p class="subtitle mb-xl">Hệ thống hóa toàn bộ kiến thức qua 6 bài tập thành phần từ thao tác tệp tin,<br>tìm kiếm thông tin đến ứng dụng Trí tuệ nhân tạo.</p>
-                <div class="mb-xxl">
-                    <a href="#about" class="button-secondary">Tìm hiểu thêm</a>
-                    <span style="display:inline-block; width:16px;"></span>
-                    <a href="projects.html" class="button-primary">Xem các dự án</a>
+    <!-- Hero Section -->
+    <section class="section-large" style="margin-top: 80px; overflow: hidden;">
+        <div class="ghost-watermark">PORTFOLIO</div>
+        <div class="container">
+            <div class="grid-2-asym-rev">
+                <div>
+                    <div class="eyebrow">• SINH VIÊN K70I-CS2 | UET - ĐHQGHN</div>
+                    <h1 class="h1-hero" style="margin-bottom: 24px;">Xin chào, tôi là<br>Vũ Đức Trung</h1>
+                    <p style="font-size: 16px; margin-bottom: 32px; color: var(--color-charcoal); max-width: 450px;">
+                        "Đam mê thuật toán, tối ưu hóa hệ thống và kiến tạo các giải pháp phần mềm thực tế."
+                    </p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#about" class="mc-pill-ink">Giới thiệu</a>
+                        <a href="projects.html" class="mc-pill-outline">Xem dự án</a>
+                    </div>
                 </div>
                 
-                <a href="projects.html" class="mockup-link">
-                    <div class="auto-slider-container">
-                        <div class="auto-slider-track">
-                            <!-- Bộ thẻ 1 -->
-                            <div class="slide-item card-feature-teal">Bài 1:<br>Thao tác cơ bản</div>
-                            <div class="slide-item card-feature-rose">Bài 2:<br>Tìm kiếm thông tin</div>
-                            <div class="slide-item card-feature-yellow">Bài 3:<br>Viết Prompt hiệu quả</div>
-                            <div class="slide-item card-feature-coral">Bài 4:<br>Công cụ trực tuyến</div>
-                            <div class="slide-item card-feature-indigo">Bài 5:<br>AI sáng tạo</div>
-                            <div class="slide-item card-feature-peach">Bài 6:<br>AI có trách nhiệm</div>
-                            
-                            <!-- Bộ thẻ 2 (Lặp lại để tạo hiệu ứng vô tận) -->
-                            <div class="slide-item card-feature-teal">Bài 1:<br>Thao tác cơ bản</div>
-                            <div class="slide-item card-feature-rose">Bài 2:<br>Tìm kiếm thông tin</div>
-                            <div class="slide-item card-feature-yellow">Bài 3:<br>Viết Prompt hiệu quả</div>
-                            <div class="slide-item card-feature-coral">Bài 4:<br>Công cụ trực tuyến</div>
-                            <div class="slide-item card-feature-indigo">Bài 5:<br>AI sáng tạo</div>
-                            <div class="slide-item card-feature-peach">Bài 6:<br>AI có trách nhiệm</div>
+                <div style="text-align: center; position: relative; display: flex; justify-content: center; align-items: center;">
+                    <div class="orbital-line orbit-1"></div>
+                    <div class="portrait-container">
+                        <img src="assets/images/avatar.png" alt="Vũ Đức Trung" class="circular-portrait">
+                        <div class="satellite-cta">
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
                         </div>
                     </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section-lg" style="background-color: var(--color-surface);">
-            <div class="container">
-                <div class="grid-2">
-                    <div class="card-feature">
-                        <h2 class="heading-2 mb-md">Về Bản Thân</h2>
-                        <p class="body-md mb-md">Xin chào, tôi là Vũ Đức Trung. Đây là không gian lưu trữ các sản phẩm cá nhân, nơi tôi ghi lại hành trình học tập và ứng dụng công nghệ vào thực tiễn.</p>
-                        <p class="body-md text-slate">Portfolio này là minh chứng cho việc học đi đôi với hành, thể hiện kỹ năng thực tế với các công cụ số hiện đại.</p>
-                    </div>
-                    
-                    <div class="card-feature card-feature-yellow">
-                        <div class="badge-tag-yellow mb-md">Mục tiêu cốt lõi</div>
-                        <h3 class="heading-3 mb-sm">Học Tập & Chia Sẻ</h3>
-                        <p class="body-md">"Thể hiện các kỹ năng số đã học, lưu trữ sản phẩm cá nhân để dễ dàng truy cập, xem lại và chia sẻ cùng mọi người trong các dự án sau này."</p>
-                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer-region">
+    <!-- About & Goals Section -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
-                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+            <div class="mc-card">
+                <div class="grid-2-asym" style="align-items: start; gap: 48px;">
+                    <!-- Khu vực 1: Giới thiệu bản thân -->
+                    <div>
+                        <div class="eyebrow">• GIỚI THIỆU BẢN THÂN</div>
+                        <h2 class="h2-section" style="margin-bottom: 24px;">Vũ Đức Trung</h2>
+                        
+                        <div class="mc-hover-block">
+                            <strong>Ngày sinh:</strong>
+                            <span>05/06/2007</span>
+                        </div>
+                        <div class="mc-hover-block">
+                            <strong>Học vấn:</strong>
+                            <span>Sinh viên lớp K70I-CS2, Trường Đại học Công nghệ (UET) - ĐHQGHN.<br>Cựu học sinh trường THPT Chuyên Phan Bội Châu, Nghệ An.</span>
+                        </div>
+                        <div class="mc-hover-block">
+                            <strong>Sở thích & Đam mê:</strong>
+                            <span>Dành nhiều thời gian cho Lập trình thi đấu (Competitive Programming) trên các nền tảng như Codeforces, VNOI với các thuật toán nâng cao (Segment Trees, Quy hoạch động, Tìm kiếm nhị phân). Ngoài ra, tôi rất thích tìm hiểu sâu về Toán học cao cấp, Vật lý ứng dụng và kiến trúc phần mềm.</span>
+                        </div>
+                    </div>
+
+                    <!-- Khu vực 2: Mục tiêu & Định hướng -->
+                    <div>
+                        <div class="eyebrow">• MỤC TIÊU & ĐỊNH HƯỚNG</div>
+                        <h3 class="h3-card" style="margin-bottom: 24px;">Phát triển sự nghiệp</h3>
+                        
+                        <div class="mc-hover-block">
+                            <strong>Mục tiêu học tập:</strong>
+                            <span>Xây dựng nền tảng vững chắc về Khoa học Máy tính, đặc biệt là Cấu trúc dữ liệu & Thuật toán. Mở rộng kiến thức về mạng máy tính, quản trị cơ sở dữ liệu và các quy trình phát triển phần mềm hiện đại (CI/CD, GitHub Actions).</span>
+                        </div>
+                        <div class="mc-hover-block">
+                            <strong>Định hướng phát triển:</strong>
+                            <span>Trở thành một Kỹ sư Phần mềm (Software Engineer) chuyên sâu về Back-end hoặc Full-stack, có khả năng kiến trúc và vận hành các hệ thống lớn, phức tạp.</span>
+                        </div>
+                        <div class="mc-hover-block">
+                            <strong>Mục tiêu của Portfolio này:</strong>
+                            <span>Portfolio được thiết kế nhằm tổng hợp và thể hiện các kỹ năng số đã học từ môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Đồng thời, đây là không gian lưu trữ các sản phẩm cá nhân để dễ dàng truy cập, chia sẻ, và là công cụ hữu ích để giới thiệu năng lực bản thân trong tương lai.</span>
+                        </div>
+                    </div>
                 </div>
-                <div style="text-align:right;">
-                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section">
+        <div class="container">
+            <div class="mc-card">
+                <div class="eyebrow">• THÀNH TÍCH & GIẢI THƯỞNG</div>
+                <h2 class="h2-section" style="margin-bottom: 32px;">Những cột mốc đáng nhớ</h2>
+                
+                <div class="mc-hover-block">
+                    <strong>🏆 Giải Nhì</strong>
+                    <span>Kỳ thi chọn Học sinh giỏi cấp Tỉnh môn Tin học (Bảng A, Lớp 12), Tỉnh Nghệ An, năm học 2024-2025.</span>
+                </div>
+                <div class="mc-hover-block">
+                    <strong>🥈 Giải Nhì</strong>
+                    <span>Môn Tin học, Trại hè Tin học miền Bắc năm 2023 tại Thái Nguyên.</span>
+                </div>
+                <div class="mc-hover-block">
+                    <strong>🥉 Huy chương Đồng</strong>
+                    <span>Môn Tin học tại kỳ thi "Olympic Chuyên KHTN" (HSGS Olympiad) năm 2023.</span>
+                </div>
+                <div class="mc-hover-block">
+                    <strong>🥉 Giải Ba</strong>
+                    <span>Bảng C1, Hội thi Tin học trẻ Tỉnh Nghệ An lần thứ XXIX năm 2023.</span>
+                </div>
+                <div class="mc-hover-block">
+                    <strong>🌟 Giấy chứng nhận</strong>
+                    <span>Đã có thành tích Xuất sắc trong việc hỗ trợ Liên chi Khoa Công nghệ thông tin tại Ngày hội truyền thống UET CONNECT 2025.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="mc-card">
+                <div class="eyebrow">• CÁC DỰ ÁN TIÊU BIỂU</div>
+                <h2 class="h2-section" style="margin-bottom: 32px;">Sản phẩm thực tiễn</h2>
+                <div class="grid-2">
+                    <div class="mc-hover-block">
+                        <strong style="font-size: 18px; color: var(--color-ink-black);">💻 Hệ Thống Đấu Giá Trực Tuyến</strong>
+                        <div style="margin-top: 12px;">
+                            <p style="margin-bottom: 8px;"><span style="color: var(--color-ink-black); font-weight: 600;">Mô tả:</span> <span style="color: var(--color-charcoal);">Ứng dụng Client-Server cho phép người dùng tham gia đấu giá sản phẩm với giao diện trực quan (tích hợp thanh kéo trượt hiện đại).</span></p>
+                            <p><span style="color: var(--color-ink-black); font-weight: 600;">Công nghệ sử dụng:</span> <span style="color: var(--color-charcoal);">Java, Spring Boot cho kiến trúc Back-end, kết nối với cơ sở dữ liệu MySQL thông qua JDBC/JPA. Giao diện Front-end được xây dựng bằng JavaFX/WPF.</span></p>
+                        </div>
+                    </div>
+                    <div class="mc-hover-block">
+                        <strong style="font-size: 18px; color: var(--color-ink-black);">📁 Dự án MajorAssignment_Group1</strong>
+                        <div style="margin-top: 12px;">
+                            <p style="margin-bottom: 8px;"><span style="color: var(--color-ink-black); font-weight: 600;">Mô tả:</span> <span style="color: var(--color-charcoal);">Dự án làm việc nhóm (4 thành viên) nhằm áp dụng các kiến thức đại cương vào thực tiễn.</span></p>
+                            <p><span style="color: var(--color-ink-black); font-weight: 600;">Công nghệ sử dụng:</span> <span style="color: var(--color-charcoal);">Tổ chức luồng công việc, quản lý mã nguồn và phân chia task trên nền tảng GitHub.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="text-align: center; padding-top: 0; padding-bottom: 80px;">
+        <div class="container">
+            <a href="projects.html" class="mc-pill-ink" style="display: inline-block; font-size: 18px; padding: 16px 32px;">Khám phá 6 Bài tập thực hành & Ứng dụng AI ➔</a>
+            <p style="color: var(--color-charcoal); margin-top: 16px; font-size: 14px;">Truy cập để xem chi tiết các sản phẩm từ Bài 1 (Thao tác thiết bị) đến Bài 6 (An toàn & Liêm chính học thuật) theo yêu cầu của môn học.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mc-footer" style="background-color: #0f172a; color: #f8fafc; padding: 80px 0 60px; margin-top: 60px;">
+        <div class="container">
+            <h2 style="color: #f8fafc; margin-bottom: 64px;">Chúng tôi luôn ở đây khi bạn cần.</h2>
+            <div class="mc-footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px;">
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• VỀ TÔI</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><a href="index.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Giới thiệu chung</a></li>
+                        <li style="margin-bottom: 16px;"><a href="projects.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Dự án</a></li>
+                        <li style="margin-bottom: 16px;"><a href="summary.html" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Tổng kết</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• KẾT NỐI</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><a href="https://github.com/LaziChicken7" target="_blank" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">GitHub ↗</a></li>
+                        <li style="margin-bottom: 16px;"><a href="mailto:25022036@vnu.edu.vn" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Email ↗</a></li>
+                        <li style="margin-bottom: 16px;"><a href="https://www.facebook.com/LaziChicken7" target="_blank" style="color: #cbd5e1; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#cbd5e1'">Facebook ↗</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- Empty col for spacing -->
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-header" style="color: #94a3b8; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 24px;">• BẢN QUYỀN</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px;"><span style="color: #cbd5e1;">© 2026 Vũ Đức Trung.</span></li>
+                        <li style="margin-bottom: 16px;"><span style="color: #cbd5e1;">All rights reserved.</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -98,3 +217,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+

@@ -1,79 +1,46 @@
 :root {
-  /* Colors - Brand & Accent */
-  --color-primary: #1c1c1e;
-  --color-on-primary: #ffffff;
-  --color-brand-yellow: #ffd02f;
-  --color-brand-yellow-deep: #fcb900;
-  --color-yellow-light: #fff4c4;
-  --color-yellow-dark: #746019;
-  --color-brand-blue: #4262ff;
-  --color-blue-450: #5b76fe;
-  --color-blue-pressed: #2a41b6;
-  --color-brand-coral: #ff9999;
-  --color-coral-light: #ffc6c6;
-  --color-coral-dark: #600000;
-  --color-brand-rose: #ffd8f4;
-  --color-rose-light: #fde0f0;
-  --color-brand-pink: #fde0f0;
-  --color-brand-teal: #0fbcb0;
-  --color-teal-light: #c3faf5;
-  --color-moss-dark: #187574;
-  --color-brand-orange-light: #ffe6cd;
-  
-  /* Colors - Semantic */
-  --color-brand-red: #fbd4d4;
-  --color-brand-red-dark: #e3c5c5;
-  --color-success-accent: #00b473;
+  /* Dark Mode Palette */
+  --color-canvas: #09090b; /* Deep dark background */
+  --color-surface-lifted: #18181b; 
+  --color-surface-white: #27272a; 
+  --color-surface-bone: #18181b;
 
-  /* Colors - Surface */
-  --color-canvas: #ffffff;
-  --color-surface: #f7f8fa;
-  --color-surface-soft: #fafbfc;
-  --color-surface-yellow: #fff8e0;
-  --color-surface-pricing-featured: #f5f3ff;
-  --color-hairline: #e0e2e8;
-  --color-hairline-soft: #eef0f3;
-  --color-hairline-strong: #c7cad5;
-  
-  /* Colors - Text */
-  --color-ink-deep: #050038;
-  --color-ink: #1c1c1e;
-  --color-charcoal: #2c2c34;
-  --color-slate: #555a6a;
-  --color-steel: #6b6f7e;
-  --color-stone: #8e91a0;
-  --color-muted: #a5a8b5;
-  --color-on-dark: #ffffff;
-  --color-on-dark-muted: #a5a8b5;
-  --color-footer-bg: #1c1c1e;
+  --color-ink-black: #fafafa; /* Text goes white */
+  --color-charcoal: #e4e4e7;
+  --color-slate-gray: #a1a1aa; 
+  --color-granite: #d4d4d8;
+  --color-graphite: #d4d4d8;
+  --color-dust-taupe: #3f3f46;
+
+  --color-signal-blue: #38bdf8; /* Sky blue 400 */
+  --color-light-blue: #7dd3fc;  /* Sky blue 300 */
+  --color-dark-blue: #0284c7;   /* Sky blue 600 */
+
+  --color-link-blue: #60a5fa;
+
+  /* Elevations & Shadows */
+  --shadow-level-1: rgba(0, 0, 0, 0.4) 0px 4px 24px 0px; 
+  --shadow-level-2: rgba(0, 0, 0, 0.6) 0px 24px 48px 0px; 
 
   /* Typography */
-  /* Fallback for Roobert PRO */
-  --font-family-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  
-  /* Rounded */
-  --rounded-xs: 4px;
+  --font-family-display: 'JetBrains Mono', monospace;
+  --font-family-body: 'JetBrains Mono', monospace;
+
+  /* Border Radius */
   --rounded-sm: 6px;
-  --rounded-md: 8px;
-  --rounded-lg: 12px;
-  --rounded-xl: 16px;
-  --rounded-xxl: 20px;
-  --rounded-xxxl: 28px;
-  --rounded-feature: 32px;
-  --rounded-full: 9999px;
+  --rounded-pill-btn: 20px;
+  --rounded-pill-consent: 24px;
+  --rounded-stadium: 40px; /* Hero frames, large sections */
+  --rounded-circle: 50%;
+  --rounded-pill-full: 999px; /* Nav pill, chips */
 
   /* Spacing */
-  --space-xxs: 4px;
-  --space-xs: 8px;
-  --space-sm: 12px;
-  --space-md: 16px;
-  --space-lg: 20px;
-  --space-xl: 24px;
-  --space-xxl: 32px;
-  --space-xxxl: 40px;
-  --space-section-sm: 48px;
-  --space-section: 64px;
-  --space-section-lg: 96px;
-  --space-hero: 120px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+  --space-16: 128px;
 }

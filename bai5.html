@@ -8,90 +8,119 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-brand-container">
-                <div class="nav-brand-icon">M</div>
-                <div class="nav-brand">My Portfolio</div>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Giới thiệu</a>
-                <a href="projects.html" class="active">Dự án</a>
-                <a href="summary.html">Tổng kết</a>
-            </div>
-            <div>
-                <a href="projects.html" class="button-secondary">Quay lại Dự án</a>
-            </div>
+    <nav class="floating-nav">
+        <div class="nav-brand">
+            <img src="assets/images/school-logo.png" alt="Logo Trường" class="school-logo">
+            <a href="projects.html" class="glass-nav-item" style="margin-left: 4px;">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                </span>
+                <span class="text">Quay lại</span>
+            </a>
+            <span style="margin-left: 8px;">Vu Duc Trung's Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="text">Giới thiệu</span>
+            </a>
+            <a href="projects.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </span>
+                <span class="text">Dự án</span>
+            </a>
+            <a href="summary.html" class="glass-nav-item">
+                <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+                </span>
+                <span class="text">Tổng kết</span>
+            </a>
+            <img src="assets/images/avatar.png" alt="Profile Icon" class="nav-profile-icon">
         </div>
     </nav>
 
     <main>
-        <section class="section">
+        <section class="section" style="padding-top: 160px;">
             <div class="container text-center">
-                <div class="badge-tag-purple mb-md">Bài 5</div>
-                <h1 class="display-lg mb-sm">AI hỗ trợ<br>sáng tạo nội dung</h1>
+                <div class="eyebrow mb-md">Bài 5</div>
+                <h1 class="h1-hero mb-sm">AI hỗ trợ<br>sáng tạo nội dung</h1>
                 <p class="subtitle mb-xl">Sản phẩm xuất bản Blog chuyên môn với sự hỗ trợ của Generative AI.</p>
             </div>
             
-            <div class="container" style="max-width: 900px;">
+            <div class="container">
                 
-                <div class="card-feature mb-xl">
-                    <p class="body-md text-slate mb-xl">Trong dự án này, tôi đóng vai trò là một người sáng tạo nội dung để xuất bản bài viết Blog công nghệ chuyên sâu: <strong>"Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI"</strong>. Thay vì để AI tự động viết 100%, tôi đã định vị AI là một "Co-pilot" (Người lái phụ) và giữ vững >50% khối lượng công việc là chuyên môn của con người.</p>
+                <div class="mc-card mb-xl">
+                    <p class="body-md  mb-xl">Trong dự án này, tôi đóng vai trò là một người sáng tạo nội dung để xuất bản bài viết Blog công nghệ chuyên sâu: <strong>"Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI"</strong>. Thay vì để AI tự động viết 100%, tôi đã định vị AI là một "Co-pilot" (Người lái phụ) và giữ vững >50% khối lượng công việc là chuyên môn của con người.</p>
                     
-                    <h3 class="heading-3 mb-sm">1. Bộ 3 công cụ AI (The Co-pilot Stack)</h3>
+                    <h3 class="h3-card mb-sm">1. Bộ 3 công cụ AI (The Co-pilot Stack)</h3>
                     
                     <div class="grid-3 mt-lg mb-xxl">
-                        <div class="card-base text-center">
+                        <div class="rule-card text-center">
                             <div style="font-size: 40px; margin-bottom: var(--space-sm);">🤖</div>
-                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Google Gemini (Văn bản)</h4>
-                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Lên dàn ý (Outline) logic và viết bản nháp thô.</p>
-                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> AI gặp "ảo giác" khi code. Tôi đã tự viết lại 60% nội dung, bổ sung code thật về JDBC/JPA và CI/CD.</p>
+                            <h4 class="eyebrow mb-sm" style="color: var(--color-brand-blue);">Google Gemini (Văn bản)</h4>
+                            <p class="body-sm  mb-sm text-left"><strong>Nhiệm vụ:</strong> Lên dàn ý (Outline) logic và viết bản nháp thô.</p>
+                            <p class="body-sm  text-left"><strong>Can thiệp (Human touch):</strong> AI gặp "ảo giác" khi code. Tôi đã tự viết lại 60% nội dung, bổ sung code thật về JDBC/JPA và CI/CD.</p>
                         </div>
                         
-                        <div class="card-base text-center">
+                        <div class="rule-card text-center">
                             <div style="font-size: 40px; margin-bottom: var(--space-sm);">🎨</div>
-                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Midjourney (Hình ảnh)</h4>
-                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo ảnh Cover phong cách Cyberpunk.</p>
-                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> AI sinh ra text vô nghĩa trên màn hình. Tôi dùng Photoshop đè code thuật toán thật lên ảnh.</p>
+                            <h4 class="eyebrow mb-sm" style="color: var(--color-brand-blue);">Midjourney (Hình ảnh)</h4>
+                            <p class="body-sm  mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo ảnh Cover phong cách Cyberpunk.</p>
+                            <p class="body-sm  text-left"><strong>Can thiệp (Human touch):</strong> AI sinh ra text vô nghĩa trên màn hình. Tôi dùng Photoshop đè code thuật toán thật lên ảnh.</p>
                         </div>
 
-                        <div class="card-base text-center">
+                        <div class="rule-card text-center">
                             <div style="font-size: 40px; margin-bottom: var(--space-sm);">📊</div>
-                            <h4 class="heading-5 mb-sm" style="color: var(--color-brand-blue);">Canva Magic Design</h4>
-                            <p class="body-sm text-slate mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo layout Infographic tự động.</p>
-                            <p class="body-sm text-slate text-left"><strong>Can thiệp (Human touch):</strong> Tinh chỉnh thủ công bảng màu (Palette) sang xanh dương tối và sửa lại Typography cho chuẩn Tech.</p>
+                            <h4 class="eyebrow mb-sm" style="color: var(--color-brand-blue);">Canva Magic Design</h4>
+                            <p class="body-sm  mb-sm text-left"><strong>Nhiệm vụ:</strong> Tạo layout Infographic tự động.</p>
+                            <p class="body-sm  text-left"><strong>Can thiệp (Human touch):</strong> Tinh chỉnh thủ công bảng màu (Palette) sang xanh dương tối và sửa lại Typography cho chuẩn Tech.</p>
                         </div>
                     </div>
 
-                    <h3 class="heading-3 mb-sm">2. Khía cạnh Đạo đức & Tư duy làm việc</h3>
+                    <h3 class="h3-card mb-sm">2. Khía cạnh Đạo đức & Tư duy làm việc</h3>
                     <div class="ethics-box">
-                        <p class="body-md text-slate mb-sm">Sự xuất hiện của AI đã thay đổi quy trình làm việc của tôi từ <em>Tuyến tính (Viết từ đầu)</em> sang <em>Song song (Định hướng AI ➔ Kiểm chứng ➔ Tinh chỉnh)</em>. Thời gian rút ngắn từ 3 ngày xuống 1 ngày, nhưng chất xám kiểm duyệt tăng lên. Tôi tuân thủ 3 nguyên tắc đạo đức:</p>
-                        <ul class="ethics-list">
-                            <li>⚖️ <strong>Bản quyền:</strong> Cẩn trọng với dữ liệu huấn luyện của Midjourney.</li>
-                            <li>🧠 <strong>Bảo vệ năng lực lõi:</strong> Không copy-paste code logic của AI để tránh thui chột tư duy thuật toán.</li>
-                            <li>📢 <strong>Minh bạch:</strong> Đặt công bố (Disclaimer) rõ ràng về việc bài viết có sử dụng AI hỗ trợ ở phần mở đầu.</li>
-                        </ul>
+                        <p class="body-md mb-lg">Sự xuất hiện của AI đã thay đổi quy trình làm việc của tôi từ <em>Tuyến tính (Viết từ đầu)</em> sang <em>Song song (Định hướng AI ➔ Kiểm chứng ➔ Tinh chỉnh)</em>. Thời gian rút ngắn từ 3 ngày xuống 1 ngày, nhưng chất xám kiểm duyệt tăng lên. Tôi tuân thủ 3 nguyên tắc đạo đức:</p>
+                        <div class="rules-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+                            <div class="rule-card">
+                                <div class="rule-icon">⚖️</div>
+                                <h4>1. Bản quyền</h4>
+                                <p class="mt-xs">Cẩn trọng với dữ liệu huấn luyện của Midjourney. Không sử dụng nguyên bản nội dung mà không chỉnh sửa.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon">🧠</div>
+                                <h4>2. Bảo vệ năng lực lõi</h4>
+                                <p class="mt-xs">Không copy-paste code logic của AI để tránh thui chột tư duy thuật toán.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon">📢</div>
+                                <h4>3. Minh bạch</h4>
+                                <p class="mt-xs">Đặt công bố (Disclaimer) rõ ràng về việc bài viết có sử dụng AI hỗ trợ ở phần mở đầu.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h3 class="heading-3 mb-sm mt-xl">3. Trưng bày sản phẩm (Bản mô phỏng)</h3>
-                    <!-- Mô phỏng giao diện một bài Blog bằng CSS (Không dùng ảnh) -->
-                    <div class="blog-mockup">
-                        <div class="blog-cover-simulated">
-                            <div class="cyberpunk-text">CYBERPUNK // BACKEND ERA</div>
+                    <h3 class="h3-card mb-sm mt-xl">3. Trưng bày sản phẩm (Bản mô phỏng)</h3>
+                    <!-- Mô phỏng giao diện một bài Blog bằng CSS -->
+                    <div class="rule-card" style="padding: 0; overflow: hidden; background: #0f1115;">
+                        <div class="blog-cover-simulated" style="background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%); height: 180px; display: flex; align-items: center; justify-content: center;">
+                            <div class="cyberpunk-text" style="color: #60a5fa; font-size: 28px; font-weight: 800; letter-spacing: 4px; text-shadow: 0 0 10px rgba(96,165,250,0.5);">CYBERPUNK // BACKEND ERA</div>
                         </div>
-                        <div class="blog-content-simulated">
-                            <div class="blog-tags"><span>#Java</span> <span>#SpringBoot</span> <span>#AI</span></div>
-                            <h2 class="blog-title">Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI</h2>
-                            <div class="blog-meta">Tác giả: Vũ Đức Trung • Thời gian đọc: 8 phút</div>
-                            <div class="blog-disclaimer"><em>*Disclaimer: Bài viết này được phác thảo với sự hỗ trợ của Google Gemini. Phần logic code (JDBC/JPA, CI/CD) được tác giả trực tiếp kiểm chứng và viết lại.</em></div>
-                            <p class="blog-excerpt">Sự ra đời của các công cụ Generative AI đang tái định hình hoàn toàn cách chúng ta xây dựng hệ thống backend. Tuy nhiên, liệu AI có thể thực sự thay thế một kỹ sư nắm vững kiến trúc hệ thống? Hãy cùng phân tích...</p>
-                            <div class="btn-read-more">Đọc tiếp bài viết ➔</div>
+                        <div class="blog-content-simulated" style="padding: 32px;">
+                            <div class="blog-tags mb-sm" style="color: #3b82f6; font-size: 14px; font-weight: 600;"><span style="margin-right: 12px;">#Java</span> <span style="margin-right: 12px;">#SpringBoot</span> <span>#AI</span></div>
+                            <h2 class="blog-title mb-sm" style="font-size: 24px; color: #f8fafc; line-height: 1.4;">Tương lai của Lập trình viên Backend (Java/Spring Boot) trong kỷ nguyên AI</h2>
+                            <div class="blog-meta mb-md" style="color: #94a3b8; font-size: 14px;">Tác giả: Vũ Đức Trung • Thời gian đọc: 8 phút</div>
+                            <div class="blog-disclaimer mb-md" style="padding: 12px; border-left: 3px solid #f59e0b; background: rgba(245,158,11,0.1); color: #cbd5e1; font-size: 14px;"><em>*Disclaimer: Bài viết này được phác thảo với sự hỗ trợ của Google Gemini. Phần logic code (JDBC/JPA, CI/CD) được tác giả trực tiếp kiểm chứng và viết lại.</em></div>
+                            <p class="blog-excerpt mb-lg" style="color: #cbd5e1; line-height: 1.7;">Sự ra đời của các công cụ Generative AI đang tái định hình hoàn toàn cách chúng ta xây dựng hệ thống backend. Tuy nhiên, liệu AI có thể thực sự thay thế một kỹ sư nắm vững kiến trúc hệ thống? Hãy cùng phân tích...</p>
+                            <div class="btn-read-more" style="display: inline-block; color: #38bdf8; font-weight: 600; cursor: pointer;">Đọc tiếp bài viết ➔</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center mt-xl mb-xl">
-                    <a href="assets/files/Bai_5.pdf" target="_blank" class="button-primary">
+                    <a href="assets/files/Bai_5.pdf" target="_blank" class="mc-pill-ink">
                         📄 Xem File báo cáo chi tiết Bài 5 (PDF)
                     </a>
                 </div>
@@ -100,15 +129,15 @@
         </section>
     </main>
 
-    <footer class="footer-region mt-xxl">
+    <footer class="footer-region mt-xxl" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 32px; padding-bottom: 32px; background: rgba(0,0,0,0.2);">
         <div class="container">
-            <div class="grid-2">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
                 <div>
-                    <h4 class="heading-5 mb-sm">My Portfolio</h4>
-                    <p class="caption">Xây dựng với giao diện Miro Visual Workspace.</p>
+                    <h4 class="eyebrow mb-sm" style="color: #f8fafc; font-weight: 600; display: flex; align-items: center; gap: 8px;"><span style="color: #f97316; font-size: 10px;">●</span> MY PORTFOLIO</h4>
+                    <p class="caption" style="color: #94a3b8;">Xây dựng với giao diện Miro Visual Workspace.</p>
                 </div>
                 <div style="text-align:right;">
-                    <p class="caption">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
+                    <p class="caption" style="color: #e2e8f0; font-weight: 500;">&copy; 2026 Vũ Đức Trung. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -117,3 +146,7 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
