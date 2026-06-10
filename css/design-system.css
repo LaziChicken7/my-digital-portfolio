@@ -44,3 +44,21 @@
   --space-12: 96px;
   --space-16: 128px;
 }
+
+[data-theme="light"] {
+  /* Light Mode Palette */
+  --color-canvas: #f8fafc;
+  --color-surface-lifted: #ffffff;
+  --color-surface-white: #ffffff;
+  --color-surface-bone: #f1f5f9;
+
+  --color-ink-black: #0f172a;
+  --color-charcoal: #334155;
+  --color-slate-gray: #64748b;
+  --color-granite: #94a3b8;
+  --color-graphite: #475569;
+  --color-dust-taupe: #cbd5e1;
+
+  --shadow-level-1: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+  --shadow-level-2: rgba(0, 0, 0, 0.1) 0px 12px 32px 0px;
+}
