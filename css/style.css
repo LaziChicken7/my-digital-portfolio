@@ -464,8 +464,12 @@ body::after {
 }
 
 /* Spotlight Hover Effect */
-.mc-card, .rule-card, .mc-hover-block, .prompt-box, .output-box, .floating-nav {
+.mc-card, .rule-card, .mc-hover-block, .prompt-box, .output-box {
     position: relative;
+    overflow: hidden;
+}
+
+.floating-nav {
     overflow: hidden;
 }
 
