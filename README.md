@@ -3,6 +3,7 @@
 [![LATEST RELEASE](https://img.shields.io/badge/LATEST_RELEASE-V2026.06.11-007ec6?style=for-the-badge)](https://github.com/LaziChicken7/my-digital-portfolio)
 [![GITHUB PROFILE](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github)](https://github.com/LaziChicken7)
 [![PORTFOLIO](https://img.shields.io/badge/PORTFOLIO-VIEW_LIVE-2ba138?style=for-the-badge)](index.html)
+
 Chào mừng bạn đến với Digital Portfolio của tôi! Đây là không gian trực tuyến được thiết kế để lưu trữ và giới thiệu về bản thân, các mục tiêu học tập, thành tích cũng như những dự án mà tôi đã và đang thực hiện.
 
 ## 👨‍💻 Về bản thân
