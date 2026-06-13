@@ -67,6 +67,54 @@ document.addEventListener('DOMContentLoaded', () => {
         const themeText = document.getElementById('themeText');
         const colorSwatches = document.querySelectorAll('.color-swatch');
         
+        // --- Tooltip Logic ---
+        if (avatar) {
+            const tooltipHtml = `
+                <div class="settings-hint-vector" id="settingsTooltip">
+                    <div class="hint-text">Cá nhân hoá<br>giao diện</div>
+                    <svg class="hint-arrow" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10,80 Q30,20 85,25" stroke-width="6" stroke-linecap="round" fill="none"/>
+                        <path d="M65,10 L88,25 L70,45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', tooltipHtml);
+            const tooltip = document.getElementById('settingsTooltip');
+            
+            const positionTooltip = () => {
+                const rect = avatar.getBoundingClientRect();
+                tooltip.style.top = (rect.bottom + 10) + 'px';
+                // Đặt mũi tên sát vào bên phải avatar
+                tooltip.style.left = (rect.right - 140) + 'px'; 
+            };
+            
+            positionTooltip();
+            window.addEventListener('resize', positionTooltip);
+            
+            // Thêm hiệu ứng nổi bật khi hover thanh điều hướng hoặc dòng chữ
+            const navBar = document.querySelector('.floating-nav');
+            if (navBar) {
+                navBar.addEventListener('mouseenter', () => tooltip.classList.add('glow-active'));
+                navBar.addEventListener('mouseleave', () => tooltip.classList.remove('glow-active'));
+            }
+            tooltip.addEventListener('mouseenter', () => tooltip.classList.add('glow-active'));
+            tooltip.addEventListener('mouseleave', () => tooltip.classList.remove('glow-active'));
+            
+            if (!localStorage.getItem('hasSeenSettingsVector2')) {
+                setTimeout(() => {
+                    tooltip.classList.add('show');
+                }, 1000);
+            }
+            
+            avatar.addEventListener('click', () => {
+                if (!localStorage.getItem('hasSeenSettingsVector2')) {
+                    localStorage.setItem('hasSeenSettingsVector2', 'true');
+                    tooltip.classList.remove('show');
+                }
+            });
+        }
+        // ---------------------
+        
         // Ensure initial load applies theme/color BEFORE showing page nicely
         const applyTheme = (isLight) => {
             if (isLight) {
@@ -80,16 +128,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         
         const colors = {
-            blue: { signal: '#38bdf8', link: '#60a5fa' },
-            orange: { signal: '#f97316', link: '#fb923c' },
-            purple: { signal: '#a855f7', link: '#c084fc' },
-            green: { signal: '#10b981', link: '#34d399' }
+            blue: { signal: '#38bdf8', link: '#60a5fa', rgb: '56, 189, 248' },
+            orange: { signal: '#f97316', link: '#fb923c', rgb: '249, 115, 22' },
+            purple: { signal: '#a855f7', link: '#c084fc', rgb: '168, 85, 247' },
+            green: { signal: '#10b981', link: '#34d399', rgb: '16, 185, 129' }
         };
         
         const applyColor = (colorName) => {
             if (!colors[colorName]) return;
             document.documentElement.style.setProperty('--color-signal-blue', colors[colorName].signal);
             document.documentElement.style.setProperty('--color-link-blue', colors[colorName].link);
+            document.documentElement.style.setProperty('--color-signal-blue-rgb', colors[colorName].rgb);
             
             colorSwatches.forEach(swatch => {
                 swatch.classList.toggle('active', swatch.dataset.color === colorName);
@@ -105,16 +154,39 @@ document.addEventListener('DOMContentLoaded', () => {
         if (savedColor) applyColor(savedColor);
         
         // Event Listeners
-        if(avatar) {
-            avatar.addEventListener('click', (e) => {
-                e.stopPropagation();
+        if(avatar && dropdown) {
+            let hideTimeout;
+            
+            const positionDropdown = () => {
                 const rect = avatar.getBoundingClientRect();
                 dropdown.style.top = (rect.bottom + 12) + 'px';
-                // calculate right to align with avatar's right edge
                 const rightOffset = window.innerWidth - rect.right;
                 dropdown.style.right = rightOffset + 'px';
-                dropdown.classList.toggle('active');
-            });
+            };
+
+            const showDropdown = () => {
+                clearTimeout(hideTimeout);
+                positionDropdown();
+                dropdown.classList.add('active');
+                
+                // Ẩn hướng dẫn nếu người dùng tương tác
+                if (!localStorage.getItem('hasSeenSettingsVector2')) {
+                    localStorage.setItem('hasSeenSettingsVector2', 'true');
+                    const tooltip = document.getElementById('settingsTooltip');
+                    if (tooltip) tooltip.classList.remove('show');
+                }
+            };
+
+            const hideDropdown = () => {
+                hideTimeout = setTimeout(() => {
+                    dropdown.classList.remove('active');
+                }, 300);
+            };
+
+            avatar.addEventListener('mouseenter', showDropdown);
+            avatar.addEventListener('mouseleave', hideDropdown);
+            dropdown.addEventListener('mouseenter', showDropdown);
+            dropdown.addEventListener('mouseleave', hideDropdown);
         }
         
         document.addEventListener('click', (e) => {
@@ -136,6 +208,61 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     setupSettingsPanel();
+    
+    // Setup Scroll Reveal Animations
+    const setupScrollReveal = () => {
+        const revealConfigs = [
+            { selector: '.h1-hero, .h2-section, main .eyebrow', class: 'reveal-fade-up' },
+            { selector: '.mc-card', class: 'reveal-fade-up' },
+            { selector: '.grid-2-asym > div:first-child', class: 'reveal-fade-right' },
+            { selector: '.grid-2-asym > div:last-child', class: 'reveal-fade-left' },
+            { selector: '.grid-2-asym-rev > div:first-child', class: 'reveal-fade-right' },
+            { selector: '.grid-2-asym-rev > div:last-child', class: 'reveal-fade-left' },
+            { selector: '.grid-3 > a, .grid-3 > div', class: 'reveal-zoom-in' },
+            { selector: '.rule-card', class: 'reveal-zoom-in' },
+            { selector: '.mc-hover-block', class: 'reveal-fade-up' },
+            { selector: '.project-list li', class: 'reveal-fade-right' }
+        ];
+        
+        let elementsToObserve = [];
+
+        revealConfigs.forEach(config => {
+            const elements = document.querySelectorAll(config.selector);
+            elements.forEach((el, index) => {
+                // Prevent duplicate assignments
+                if (el.dataset.hasReveal) return;
+                
+                el.classList.add(config.class);
+                el.dataset.hasReveal = "true";
+                
+                // Add staggered delay for grid items or lists
+                if (['.grid-3 > a', '.grid-3 > div', '.rule-card', '.mc-hover-block', '.project-list li'].includes(config.selector)) {
+                    el.style.transitionDelay = `${index * 0.1}s`;
+                }
+                
+                elementsToObserve.push(el);
+            });
+        });
+
+        const revealOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-revealed');
+                observer.unobserve(entry.target); // Animate only once
+            });
+        }, revealOptions);
+
+        elementsToObserve.forEach(el => {
+            revealObserver.observe(el);
+        });
+    };
+
+    setupScrollReveal();
     
     // Add subtle reveal animations if needed in the future
     console.log("Framer Portfolio initialized.");
