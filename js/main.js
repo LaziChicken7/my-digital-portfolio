@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Add staggered delay for grid items or lists
                 if (['.grid-3 > a', '.grid-3 > div', '.rule-card', '.mc-hover-block', '.project-list li'].includes(config.selector)) {
-                    el.style.transitionDelay = `${index * 0.1}s`;
+                    el.style.transitionDelay = `${(index % 4) * 0.08}s`;
                 }
                 
                 elementsToObserve.push(el);
@@ -245,8 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const revealOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
+            threshold: 0,
+            rootMargin: "0px 0px 150px 0px"
         };
 
         const revealObserver = new IntersectionObserver((entries, observer) => {
